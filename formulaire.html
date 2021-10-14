@@ -17,80 +17,86 @@
     <!--------------------------------- Main ----------------------------------->
     <main>
         <form class="container">
+            <section class="formulaire">
 
-            <legend>Ajouter un évènement ou un rappel</legend>
-            <div>
-                <textarea name="exp" placeholder="Titre de l'évènement" maxlength="500"></textarea>
-            </div>
-
-            <section class="element">
+                <legend>Ajouter un évènement ou un rappel</legend>
                 <div>
-                    <label for="jour"></label>
-                    <input class="border" placeholder="jour" type="date" id="jour" name="jour" min="1" max="31">
+                    <textarea name="exp" placeholder="Titre de l'évènement" maxlength="500"></textarea>
                 </div>
-                <div>
-                    <label for="Adresse"></label>
-                    <input class="border adresse" placeholder="Lieu de l'évènement" type="text" id="Adresse"
-                        name="Adresse" minlength="2" required>
-                </div>
-            </section>
 
-            <div>
-                <h3>Heure</h3>
-                <label for="heure1"></label>
-                <input class="border" placeholder="Début" type="number" id="heure1" name="heure" min="1" max="24">
-                <label for="heure2"></label>
-                <input class="border" placeholder="Fin" type="number" id="heure2" name="heure" min="1" max="24">
-            </div>
+                <section class="element">
+                    <div>
+                        <label for="jour"></label>
+                        <input class="border" placeholder="jour" type="date" id="jour" name="jour" min="1" max="31">
+                    </div>
+                    <div>
+                        <label for="Adresse"></label>
+                        <input class="border adresse" placeholder="Lieu de l'évènement" type="text" id="Adresse"
+                            name="Adresse" minlength="2" required>
+                    </div>
+                </section>
 
-            <h3>Alerte</h3>
-            <div class="bas">
-                <div><input type="checkbox" id="suivre">
-                    <label for="suivre">10 mn avant</label>
+                <div>
+                    <h3>Heure</h3>
+                    <label for="heure1"></label>
+                    <input class="border" placeholder="Début" type="number" id="heure1" name="heure" min="1" max="24">
+                    <label for="heure2"></label>
+                    <input class="border" placeholder="Fin" type="number" id="heure2" name="heure" min="1" max="24">
                 </div>
-                <div> <input type="checkbox" id="suivre2">
-                    <label for="suivre2">1 heure avant</label>
-                </div>
-                <div> <input type="checkbox" id="suivre3">
-                    <label for="suivre3">1 jour avant</label>
-                </div>
-            </div>
 
-            <h3 class="h">Catégorie</h3>
-            <div class="bas">
-                <div>
-                    <input type="radio" id="1" name="sexe" value="homme">
-                    <label for="1">Niveau 1</label>
+                <h3>Alerte</h3>
+                <div class="bas">
+                    <div><input type="checkbox" id="suivre">
+                        <label for="suivre">10 mn avant</label>
+                    </div>
+                    <div> <input type="checkbox" id="suivre2">
+                        <label for="suivre2">1 heure avant</label>
+                    </div>
+                    <div> <input type="checkbox" id="suivre3">
+                        <label for="suivre3">1 jour avant</label>
+                    </div>
                 </div>
-                <div> <input type="radio" id="2" name="sexe" value="homme">
-                    <label for="2">Niveau 2</label>
+
+                <h3 class="h">Catégorie</h3>
+                <div class="bas">
+                    <div>
+                        <input type="radio" id="1" name="cat" value="imp">
+                        <button class="color1"></button>
+                        <label for="1">Niveau 1</label>
+                    </div>
+                    <div> <input type="radio" id="2" name="cat" value="imp">
+                        <button class="color2"></button>
+                        <label for="2">Niveau 2</label>
+                    </div>
+                    <div> <input type="radio" id="3" name="cat" value="imp">
+                        <button class="color3"></button>
+                        <label for="3">Niveau 3</label>
+                    </div>
+                    <div> <input type="radio" id="4" name="cat" value="imp">
+                        <button class="color4"></button>
+                        <label for="4">Niveau 4</label>
+                    </div>
                 </div>
-                <div> <input type="radio" id="3" name="sexe" value="homme">
-                    <label for="3">Niveau 3</label>
-                </div>
-                <div> <input type="radio" id="4" name="sexe" value="homme">
-                    <label for="4">Niveau 4</label>
-                </div>
-            </div>
 
 
-            <h3 class="h">Répéter</h3>
-            <div class="bas2">
-                <div>
-                    <input type="radio" id="o" name="sexe" value="homme">
-                    <label for="o">Oui</label>
+                <h3 class="h">Activer la répétition d'alert</h3>
+                <div class="bas2">
+                    <div>
+                        <input type="radio" id="Oui" name="activateur" value="O">
+                        <label for="Oui">Oui</label>
+                    </div>
+                    <div><input type="radio" id="Non" name="activateur" value="N">
+                        <label for="Non">Non</label>
+                    </div>
                 </div>
-                <div><input type="radio" id="n" name="sexe" value="femme">
-                    <label for="n">Nom</label>
-                </div>
-            </div>
-            <section class="bas1">
-                <div>
-                    <a class="lie" href="agenda.html"> Retour</a>
-                </div>
-                <div>
-                    <input class="butt" type="submit" value="Enregistrer">
-                </div>
+                <section class="bas1">
+                    <div>
+                        <a class="lie" href="agenda.html"> Retour</a>
+                    </div>
+                    <div>
+                        <input class="butt" type="submit" value="Enregistrer">
+                    </div>
+                </section>
             </section>
 
         </form>

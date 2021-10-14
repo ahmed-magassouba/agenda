@@ -34,6 +34,8 @@ body::after{
     clip-path: circle(20% at 70% 90%);
 }
 .container{
+    width: 1400px;
+    height: 700px;
     position: relative;
     background: slategray rgba(255,255,255,0.05);
     border-radius: 6px;
@@ -51,18 +53,17 @@ body::after{
 
 table{
     color: thistle;
-    padding: 15px;
-    width: 1900px;
-    height: 800px;
+    width: 1300px;
+    height: 580px;
+    margin: auto;
 }
 caption{
     padding: 10px;
     font-size: 65px;
 }
 td{
-    text-align: center;
-    font-size: 35px;
-    width: 85px;
+    width: 80px;
+    height: 70px;
     border:1px solid rgba(255,255,255,0.2) ;
     transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
@@ -72,18 +73,32 @@ transform: scale(1.4);
 color:mediumturquoise ;
 }
 
+.liena{
+    display: block;
+   text-decoration: none;
+   color: thistle;
+ font-size: 20px;
+ text-align: center;
+ background-color:rgba(255,255,255,0.2) ;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* ----------------- page formulaure --------------------- */
 
 
-form{
+.formulaire{
     color: thistle;
     padding: 15px;
     text-align: center;
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     display: grid;
+    margin: auto;
     
 }
 .element{
@@ -110,7 +125,7 @@ textarea{
     border:1px solid rgba(255,255,255,0.2) ;
     border-radius: 4px;
     background-color:  rgba(255,255,255,0.2);
-    padding-top: 10px;
+    align-items: center;
 }
 
 .bas2{
@@ -119,7 +134,7 @@ textarea{
     border:1px solid rgba(255,255,255,0.2) ;
     border-radius: 4px;
     background-color:  rgba(255,255,255,0.2);
-    padding-top: 10px;
+align-items: center;
 }
 
 .bas1{
@@ -152,4 +167,26 @@ textarea{
 .butt:hover{
 background-color: mediumturquoise;
 color:rgb(12, 12, 12);
+}
+.lie:hover{
+    background-color: mediumturquoise;
+    color:rgb(12, 12, 12);
+    }
+    button{
+        border-radius: 100%;
+        width: 15px;
+        height: 15px;
+        border: none;
+    }
+.color1{
+    background-color: whitesmoke; 
+}
+.color2{
+    background-color:blue ;
+}
+.color3{
+    background-color: yellow;
+}
+.color4{
+    background-color: red;
 }
