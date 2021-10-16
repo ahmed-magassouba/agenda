@@ -84,6 +84,8 @@ color:mediumturquoise ;
 .contenu{
     display: flex;
     flex-direction: column;
+    font-size: 13px;
+    text-align: center;
 }
 
 
